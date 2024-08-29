@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Oswald } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import GreenEffect from "@/components/visualEffect/GreenEffect";
+import Cursor from "@/components/cursor/Cursor";
 
 const mainFont = Bricolage_Grotesque({ subsets: ["latin"] });
+const oswaldFont = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 
 export const metadata: Metadata = {
   title: "Abdullah Al Sayad",
@@ -17,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mainFont.className}>{children}</body>
+      <body className={cn(mainFont.className, oswaldFont.variable)}>
+        <GreenEffect />
+        <Cursor color="#fff" />
+        {children}
+      </body>
     </html>
   );
 }
