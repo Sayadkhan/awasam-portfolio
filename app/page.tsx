@@ -3,6 +3,7 @@
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
+import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveWrapper from "@/components/visualEffect/WaterWaveWrapper";
 import clsx from "clsx";
@@ -40,6 +41,7 @@ export default function Home() {
                 icon={<FaRegUserCircle />}
               />
               <TextArea placeholder="Say about" icon={<FaRegUserCircle />} />
+              <Profile />
             </Card>
           </div>
         </div>
