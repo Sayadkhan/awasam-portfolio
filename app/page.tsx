@@ -2,13 +2,14 @@
 
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
 import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveWrapper from "@/components/visualEffect/WaterWaveWrapper";
 import clsx from "clsx";
 import Image from "next/image";
-import { FaRegUserCircle, FaUser } from "react-icons/fa";
+import { FaArrowRight, FaRegUserCircle, FaUser } from "react-icons/fa";
 import { GoHome, GoHomeFill } from "react-icons/go";
 
 export default function Home() {
@@ -42,6 +43,9 @@ export default function Home() {
               />
               <TextArea placeholder="Say about" icon={<FaRegUserCircle />} />
               <Profile />
+              <div className="w-[300px]">
+                <FancyButton text="Contact us" icon={<FaArrowRight />} />
+              </div>
             </Card>
           </div>
         </div>
