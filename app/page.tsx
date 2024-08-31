@@ -6,7 +6,9 @@ import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
 import LiveClock from "@/components/ui/LiveClock";
 import Profile from "@/components/ui/Profile";
+import ScrollDown from "@/components/ui/ScrollDown";
 import TextArea from "@/components/ui/TextArea";
+import MagnaticWrapper from "@/components/visualEffect/MagnaticWrapper";
 import WaterWaveWrapper from "@/components/visualEffect/WaterWaveWrapper";
 import clsx from "clsx";
 import Image from "next/image";
@@ -44,10 +46,13 @@ export default function Home() {
               />
               <TextArea placeholder="Say about" icon={<FaRegUserCircle />} />
               <Profile />
-              <div className="w-[300px]">
+              <MagnaticWrapper className="w-[300px]">
                 <FancyButton text="Contact us" icon={<FaArrowRight />} />
-              </div>
+              </MagnaticWrapper>
               <LiveClock timeZone="Asia/Dhaka" />
+              <MagnaticWrapper className="flex items-center justify-center">
+                <ScrollDown />
+              </MagnaticWrapper>
             </Card>
           </div>
         </div>
