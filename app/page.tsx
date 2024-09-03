@@ -15,6 +15,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { FaArrowRight, FaRegUserCircle, FaUser } from "react-icons/fa";
 import { GoHome, GoHomeFill } from "react-icons/go";
+import FeaturedSection from "./../sections/FeaturedSection";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       {() => (
         <div>
           <LandingSection />
+          <FeaturedSection />
         </div>
       )}
     </WaterWaveWrapper>
