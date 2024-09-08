@@ -26,7 +26,7 @@ export default function Home() {
       resolution="2048"
     >
       {() => (
-        <div>
+        <div className="">
           <LandingSection />
           <FeaturedSection />
         </div>
